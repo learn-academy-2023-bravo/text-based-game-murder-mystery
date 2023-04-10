@@ -4,7 +4,14 @@ $has_knife = false
 $has_card = false
 $has_brandy = false
 def user_exit 
-    p 'You decided to quit snooping and call the police!!!'
+    p 'You decided to quit snooping and call the police!!!
+    _________  ___  ___  _______           _______   ________   ________     
+    |\___   ___\\  \|\  \|\  ___ \         |\  ___ \ |\   ___  \|\   ___ \    
+    \|___ \  \_\ \  \\\  \ \   __/|        \ \   __/|\ \  \\ \  \ \  \_|\ \   
+         \ \  \ \ \   __  \ \  \_|/__       \ \  \_|/_\ \  \\ \  \ \  \ \\ \  
+          \ \  \ \ \  \ \  \ \  \_|\ \       \ \  \_|\ \ \  \\ \  \ \  \_\\ \ 
+           \ \__\ \ \__\ \__\ \_______\       \ \_______\ \__\\ \__\ \_______\
+            \|__|  \|__|\|__|\|_______|        \|_______|\|__| \|__|\|_______|'
 end
 
 def closet_scene 
@@ -19,17 +26,47 @@ def closet_scene
         p 'You have a card on you,'
     end
     if $has_knife == false && $has_brandy == false && $has_card == false
-        p 'You have nothing to defend yourself with. You are dead 💀💀💀 '   
+        puts 'You have nothing to defend yourself with. You are dead 💀💀💀 
+        _________  ___  ___  _______           _______   ________   ________     
+        |\___   ___\\  \|\  \|\  ___ \         |\  ___ \ |\   ___  \|\   ___ \    
+        \|___ \  \_\ \  \\\  \ \   __/|        \ \   __/|\ \  \\ \  \ \  \_|\ \   
+             \ \  \ \ \   __  \ \  \_|/__       \ \  \_|/_\ \  \\ \  \ \  \ \\ \  
+              \ \  \ \ \  \ \  \ \  \_|\ \       \ \  \_|\ \ \  \\ \  \ \  \_\\ \ 
+               \ \__\ \ \__\ \__\ \_______\       \ \_______\ \__\\ \__\ \_______\
+                \|__|  \|__|\|__|\|_______|        \|_______|\|__| \|__|\|_______|'   
     else 
         p 'What will you use to defend yourself? Enter the name of the item'
         user_choice = gets.chomp 
         if user_choice == "knife" && $has_knife == true
-            p 'You use the knife to stab your attacker, and you strike a deadly blow to the side of his head. His dead now... The police arrive shortly there after. You are arrested for the murder of both individuals. You spend the rest of your life in prison. THE END...'
+            puts 'You use the knife to stab your attacker, and you strike a deadly blow to the side of his head. His dead now... The police arrive shortly there after. You are arrested for the murder of both individuals. You spend the rest of your life in prison.
+             _________  ___  ___  _______           _______   ________   ________     
+            |\___   ___\\  \|\  \|\  ___ \         |\  ___ \ |\   ___  \|\   ___ \    
+            \|___ \  \_\ \  \\\  \ \   __/|        \ \   __/|\ \  \\ \  \ \  \_|\ \   
+                 \ \  \ \ \   __  \ \  \_|/__       \ \  \_|/_\ \  \\ \  \ \  \ \\ \  
+                  \ \  \ \ \  \ \  \ \  \_|\ \       \ \  \_|\ \ \  \\ \  \ \  \_\\ \ 
+                   \ \__\ \ \__\ \__\ \_______\       \ \_______\ \__\\ \__\ \_______\
+                    \|__|  \|__|\|__|\|_______|        \|_______|\|__| \|__|\|_______|
+                                                                                      '
             abort 
         elsif user_choice == "brandy" && $has_brandy == true
-            p 'You smash the bottle on the attackers head and knock him out. He lies on the floor uncouncious. You run out of the house, not looking back. As you get outside of the house you find that the police have just arrive on scence. They arrest the Tweeter employee for the murder of Elan Misk. You live the rest of you happy life and decide to never snoop around again. THE END...'
+            puts 'You smash the bottle on the attackers head and knock him out. He lies on the floor uncouncious. You run out of the house, not looking back. As you get outside of the house you find that the police have just arrive on scence. They arrest the Tweeter employee for the murder of Elan Misk. You live the rest of you happy life and decide to never snoop around again.  
+            _________  ___  ___  _______           _______   ________   ________     
+            |\___   ___\\  \|\  \|\  ___ \         |\  ___ \ |\   ___  \|\   ___ \    
+            \|___ \  \_\ \  \\\  \ \   __/|        \ \   __/|\ \  \\ \  \ \  \_|\ \   
+                 \ \  \ \ \   __  \ \  \_|/__       \ \  \_|/_\ \  \\ \  \ \  \ \\ \  
+                  \ \  \ \ \  \ \  \ \  \_|\ \       \ \  \_|\ \ \  \\ \  \ \  \_\\ \ 
+                   \ \__\ \ \__\ \__\ \_______\       \ \_______\ \__\\ \__\ \_______\
+                    \|__|  \|__|\|__|\|_______|        \|_______|\|__| \|__|\|_______|
+                                                                                      '
         elsif user_choice == "card" && $has_card == true
-            p 'You pull out the card and you tell the man that you know who he is. You agree not to call the police as long as he lets you go. He agrees. The two of you walk away and Elans murder never gets solved. You live the rest of you life filled with guilt. THE END... '
+            puts 'You pull out the card and you tell the man that you know who he is. You agree not to call the police as long as he lets you go. He agrees. The two of you walk away and Elans murder never gets solved. You live the rest of you life filled with guilt. 
+            _________  ___  ___  _______           _______   ________   ________     
+            |\___   ___\\  \|\  \|\  ___ \         |\  ___ \ |\   ___  \|\   ___ \    
+            \|___ \  \_\ \  \\\  \ \   __/|        \ \   __/|\ \  \\ \  \ \  \_|\ \   
+                 \ \  \ \ \   __  \ \  \_|/__       \ \  \_|/_\ \  \\ \  \ \  \ \\ \  
+                  \ \  \ \ \  \ \  \ \  \_|\ \       \ \  \_|\ \ \  \\ \  \ \  \_\\ \ 
+                   \ \__\ \ \__\ \__\ \_______\       \ \_______\ \__\\ \__\ \_______\
+                    \|__|  \|__|\|__|\|_______|        \|_______|\|__| \|__|\|_______| '
         else 
             p 'That is not a valid response, try again'
             closet_scene
@@ -135,6 +172,17 @@ def kitchen_room
     elsif user_choice == 'open pantries'
         # Describe laptop
         p 'Thank goodness there are no dead bodies in here, just some really expensive brandy'
+        puts '
+              #
+             :#:
+             : :
+            /   \
+           :_____: 
+           |     | 
+           |     | 
+           |     | 
+           |_____| 
+           :_____: '
         kitchen_room()
     elsif user_choice == 'take brandy'
         if $has_brandy == true
